@@ -1,0 +1,60 @@
+.VendingMachine {
+	width: 100%;
+	height: calc(100vh - 80px);
+	position: relative;
+	border: 10px solid black;
+	background: url('./img/vending-machine.jpg') center no-repeat;
+}
+
+.VendingMachine-question,
+.VendingMachine-goods {
+	width: 270px;
+	padding: 50px 10px;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+.VendingMachine-goods {
+	right: 20px;
+}
+
+.VendingMachine-goods ul {
+	list-style: none;
+	padding: 0;
+}
+
+.VendingMachine-goods ul li a {
+	display: block;
+	padding: 10px 0;
+	font-size: 26px;
+	font-family: cursive;
+	color: var(--VendingMachine-goods-link);
+	text-decoration: none;
+}
+
+.VendingMachine-goods ul li a:hover {
+	cursor: pointer;
+	text-decoration: underline;
+	padding: 10px 0;
+}
+
+.VendingMachine-question {
+	font-size: 30px;
+	font-weight: bold;
+	font-family: monospace;
+	left: 20px;
+	/* set the background color */
+	background: linear-gradient(var(--VendingMachine-question-gradient));
+	/* background color masked along the text and clip away the rest */
+	-webkit-background-clip: text;
+	/* make fill color to transparent so that masked background color will be shown */
+	-webkit-text-fill-color: transparent;
+}
+
+.VendingMachine-addFood {
+	position: absolute;
+	bottom: 20%;
+	left: 50%;
+	transform: translate(-50%, 0);
+}

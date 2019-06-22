@@ -1,0 +1,40 @@
+.NavBar {
+	height: 80px;
+	background-color: var(--NavBar-bg-color);
+}
+
+.NavBar-item {
+	display: inline-block;
+	width: 20%;
+	text-align: center;
+	line-height: 80px;
+	text-decoration: none;
+	color: white;
+	font-family: monospace;
+	text-transform: uppercase;
+}
+
+.NavBar-item:hover {
+	color: var(--NavBar-hover-link);
+}
+
+.NavBar-item--active {
+	color: var(--NavBar-active-link);
+}
+
+.NavBar-login {
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	appearance:none;
+	background:none;
+	border:none;
+	border-radius:0;
+	transition:linear .1s;
+	user-select:none
+}
+
+.NavBar-login:hover {
+	cursor: pointer;
+	color: var(--NavBar-bg-color);
+	background: var(--NavBar-hover-link)
+}
